@@ -33,4 +33,14 @@ This interactive experience was developed and designed by:
 npm run dev
 ```
 
+## Netlify
+
+This project is configured for seamless deployment on Netlify via the included `netlify.toml`.
+
+1. Push this repository to GitHub.
+2. Link the repository in the Netlify dashboard.
+3. Build settings will be automatically configured:
+   - **Build Command**: `npm run build`
+   - **Publish Directory**: `.next`
+
 Crafted with care to ensure the highest visual standards.
