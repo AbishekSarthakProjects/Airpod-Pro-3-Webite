@@ -93,7 +93,11 @@ const PRODUCT_DATA: Record<ProductId, ProductData> = {
 
 // --- Animation Variants ---
 
-const ANIMATIONS = {
+const ANIMATIONS: {
+  container: Variants;
+  item: Variants;
+  image: (isLeft: boolean) => Variants;
+} = {
   // Container stagger for the text details
   container: {
     hidden: { opacity: 0 },
@@ -113,7 +117,7 @@ const ANIMATIONS = {
       opacity: 1,
       y: 0,
       filter: 'blur(0px)',
-      transition: { type: 'spring', stiffness: 100, damping: 20 },
+      transition: { type: 'spring', stiffness: 100, damping: 20 } as any,
     },
     exit: { opacity: 0, y: -10, filter: 'blur(5px)' },
   },

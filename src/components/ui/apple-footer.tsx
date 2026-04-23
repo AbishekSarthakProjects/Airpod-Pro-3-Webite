@@ -137,7 +137,6 @@ export default function AppleFooter() {
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   );
 }
